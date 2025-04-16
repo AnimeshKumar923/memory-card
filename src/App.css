@@ -33,15 +33,22 @@
   }
 }
 
+.grid-layout{
+  display: grid;
+}
+
 .card {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   border-radius: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image {
-  max-width: 30%;
-  max-height: 30%
-  margin-bottom: 10px;
+  max-width: 60%;
+  max-height: 60%
 }
