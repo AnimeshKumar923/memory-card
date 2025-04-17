@@ -51,7 +51,7 @@ function App() {
         {images.map((image, index) => (
           <Card
             key={index}
-            src={`../public/static/images/${image.fileName}`}
+            src={`/assets/${image.fileName}`}
             alt={image.altText}
             onClick={() => handleCardClick(image.altText)}
           />
