@@ -1,5 +1,8 @@
 import "./App.css";
 import Card from "./components/Card";
+import Header from "./components/Header";
+
+// add theme song on clicked character
 
 function App() {
   const images = [
@@ -12,8 +15,14 @@ function App() {
     { fileName: "strange.jpg", altText: "Dr. Strange image" },
     { fileName: "emma.jpg", altText: "Sue Storm image" },
   ];
+
+  // const gifs = [];
+  // const gif_id = 0;
+  // const apiKey = import.meta.env.VITE_GIPHY_API || "your_default_api_key";
+  // const api = `http://api.giphy.com/v1/gifs/${gif_id}&api_key=${apiKey}`;
   return (
     <>
+      <Header />
       <div className="grid-layout">
         {images.map((image, index) => (
           <Card
