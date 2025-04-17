@@ -24,7 +24,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .card-image:hover {

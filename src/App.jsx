@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
 import Header from "./components/Header";
+import { useState } from "react";
 
 // add theme song on clicked character
 
@@ -15,14 +16,15 @@ function App() {
     { fileName: "strange.jpg", altText: "Dr. Strange image" },
     { fileName: "emma.jpg", altText: "Sue Storm image" },
   ];
-
+  const [currentScore, setCurrentScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
   // const gifs = [];
   // const gif_id = 0;
   // const apiKey = import.meta.env.VITE_GIPHY_API || "your_default_api_key";
   // const api = `http://api.giphy.com/v1/gifs/${gif_id}&api_key=${apiKey}`;
   return (
     <>
-      <Header />
+      <Header currentScore={currentScore} bestScore={bestScore}/>
       <div className="grid-layout">
         {images.map((image, index) => (
           <Card
